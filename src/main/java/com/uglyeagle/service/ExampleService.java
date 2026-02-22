@@ -6,7 +6,9 @@ import com.uglyeagle.grpc.Example.ExampleRs;
 import com.uglyeagle.grpc.ExampleServiceGrpc;
 
 import io.grpc.stub.StreamObserver;
+import org.springframework.grpc.server.service.GrpcService;
 
+@GrpcService
 public class ExampleService extends ExampleServiceGrpc.ExampleServiceImplBase {
 
     @Override

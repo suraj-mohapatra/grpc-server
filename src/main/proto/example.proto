@@ -3,18 +3,18 @@ syntax = "proto3";
 option java_package = "com.uglyeagle.grpc";
 
 service ExampleService {
-    rpc exampleOne(ExampleRq)  returns (ExampleRs);
-    rpc exampleTwo(Empty)  returns (ExampleRs);
+  rpc exampleOne(ExampleRq)  returns (ExampleRs);
+  rpc exampleTwo(Empty)  returns (ExampleRs);
 }
 
 message ExampleRq{
-       string rqParam1 = 1 ;
-       string rqParam2 = 2 ;
+  string rqParam1 = 1 ;
+  string rqParam2 = 2 ;
 }
 
 message ExampleRs{
-      string rsMessage = 1;
-      int32  rsCode  = 2;
+  string rsMessage = 1;
+  int32  rsCode  = 2;
 }
 
 message Empty{

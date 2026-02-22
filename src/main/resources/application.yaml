@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: grpc-server
+
+  grpc:
+    server:
+      port: 8756
+      reflection:
+        enabled: true
